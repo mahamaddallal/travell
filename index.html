@@ -129,9 +129,9 @@
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 3s;
   animation-name: fade;
-  animation-duration: 2.5s;
+  animation-duration: 4s;
 }
 
 @-webkit-keyframes fade {
@@ -140,8 +140,8 @@
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {opacity: .8}
+  to {opacity: 2}
 }
 
 @media screen and (max-width: 480px) {
@@ -1581,7 +1581,7 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
+    setTimeout(showSlides, 7000); // Change image every 2 seconds
 }
 
 	</script>
